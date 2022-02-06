@@ -1,0 +1,362 @@
+/**************************************************************/
+/**************************** FONTS ***************************/
+/**************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+Body, h1, h2, h3, h4 {
+    font-family: 'Prata', serif;
+}
+
+.body {
+    font-family: 'Prata', serif;
+}
+
+footer, nav {
+    font-family: 'Duru Sans', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.large {
+    font-size: 50px;
+}
+
+.small {
+    font-size: 25px;
+}
+
+
+
+
+/**************************************************************/
+/*********************** COMMON CLASSES ***********************/
+/**************************************************************/
+
+main {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0px auto 0px auto;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: black;
+    border-style: solid;
+}
+
+.main {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0px auto 0px auto;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: black;
+    border-style: solid;
+    display: none;
+    min-height: 76vh;
+}
+
+.active-page {
+    display: block;
+}
+
+header {
+    border-bottom: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 40px 0px 20px 0px;
+}
+
+header h1 {
+    width: 90%;
+    margin: 0px auto 0px auto;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-h {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-v {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.border {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.border-top {
+    border-top: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.border-bottom {
+    border-bottom: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.border-left {
+    border-left: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.border-right {
+    border-right: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+.padding-40 {
+    padding: 40px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.padding-bottom {
+    padding-bottom: 20px;
+}
+
+.border-button {
+    padding: 5px 25px;
+    border-radius: 100px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    background-color: transparent;
+    font-family: 'Prata', serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.border-button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+/**************************************************************/
+/*********************** NAVBAR *******************************/
+/**************************************************************/
+
+nav {
+    border-bottom: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 100%; 
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; 
+    margin: 0px auto 0px auto;  
+}
+
+.nav-div {
+    padding: 20px 0px 20px 0px;
+}
+
+.nav-link {
+    cursor: pointer;
+    padding: 0px 20px 0px 20px;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    padding: 0px 20px 0px 20px;
+    color: blue;
+}
+
+#cart {
+    padding: 20px 0px 20px 0px;
+}
+
+
+
+
+
+/**************************************************************/
+/*********************** FOOTER *******************************/
+/**************************************************************/
+
+footer {
+    border-top: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    width: 90%; 
+    margin: 0px auto 0px auto;  
+}
+
+.footer-div {
+    padding: 20px 0px 20px 0px;
+    cursor: pointer;
+}
+
+
+
+
+
+/**************************************************************/
+/************************* START ******************************/
+/**************************************************************/
+
+.start-column {
+    padding: 40px;
+} 
+
+.left {
+    width: 70%;
+}
+
+.right {
+    width: 30%;
+}
+
+.arrow-container {
+    justify-content: flex-end;
+}
+
+
+
+
+
+/**************************************************************/
+/******************* BROWSE PRODUCTS **************************/
+/**************************************************************/
+
+.products-grid {
+    margin-top: 55px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 45px 45px;
+    margin: 45px;
+}
+
+/**************************************************************/
+/*********************** ITEM PAGE ****************************/
+/**************************************************************/
+
+.item-grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+}
+
+.item-grid-item-1 {
+    padding: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-grid-item-2 {
+    width: 100%;
+}
+
+.main-img {
+    height: 550px;
+    width: 400px;
+    margin-left: 45px;
+}
+
+.thumbnail-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.thumbnail-img {
+    height: 75px;
+    background-color: lightpink;
+    cursor: pointer;
+}
+
+.quantity-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background-color: transparent;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 0px 15px;
+}
+
+.quantity-button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.w3-opacity-off {
+    opacity: 50%;
+}
+
+
+
+/*********************************************************************/
+/*********************** SHOPPING CART *******************************/
+/*********************************************************************/
+
+.shopping-cart-item-grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 30px 30px;
+    padding: 45px;
+}

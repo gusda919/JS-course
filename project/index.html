@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="reset.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+        <script src="js-files/dataSet.js" type="module"></script>
+        <script src="js-files/collection.js" type="module"></script>
+        <script src="js-files/slideShow.js" type="module"></script>
+        <title>Online beverage store</title>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <nav>
+                <div class="nav-container">
+                    <div class="nav-div">Store name</div>
+                    <div class="flex-h nav-div">
+                        <div class="nav-link" id="start">Start</div>
+                        <div class="nav-link" id="shop">Browse all products</div>
+                    </div>
+                    <div class="nav-link" id="cart">Shopping cart</div>
+                </div>
+            </nav>
+
+            <header>
+                <h1 id="h1">Start</h1>
+            </header>
+
+            <div class="main flex-h" id="start-page">
+                <div class="start-column left">
+                    <h2 class="large">THIS ONLINE STORE IS THE BEST ON THE MARKET. WE GUARANTEE YOU</h2>
+                </div>
+                    <div class="showcase">
+                        <img src="images/b1.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main flex-v" id="item-page">
+                <div class="item-grid">
+                    <div class="item-grid-item-1 border-right">
+                        <div class="thumbnail-img-container">
+                            <div class="thumbnail-img" >
+                                <img class="demo" id="thumbnail-1">
+                            </div>
+                            <div class="thumbnail-img">
+                                <img class="demo" id="thumbnail-2">
+                            </div>
+                            <div class="thumbnail-img" >
+                                <img class="demo" id="thumbnail-3">
+                            </div>
+                            <div class="thumbnail-img">
+                                <img class="demo" id="thumbnail-4">
+                            </div>
+                            <div class="thumbnail-img">
+                                <img class="demo" id="thumbnail-5">
+                            </div>
+                        </div>
+                        <div class="main-img" >
+                            <img class="mySlides" id="mainItem">
+                            <img class="mySlides" id="mainItem1">
+                            <img class="mySlides" id="mainItem2">
+                            <img class="mySlides" id="mainItem3">
+                            <img class="mySlides" id="mainItem4">
+                        </div>
+                    </div>
+                    <div class="item-grid-item-2 flex-v space-between">
+                        <div>
+                            <div class="flex-h space-between border-bottom padding-40">
+                                <h2 id="itemName">Product name</h2>
+                                <p id="itemPrice">Price</p>
+                            </div>
+                            <div class="flex-v border-bottom padding-40">
+                                <h3>Description</h3>
+                                <p id="itemDescription">kajdhk adkjahsdk ajshdkjhafka sdfkjhasdfka sk ajfh aksjhfk asdjh kasjh kashd kajhsdkak jsdhka skjds</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex-h space-between padding-40">
+                                <h3>Add to cart</h3>
+                                <div class="flex-v">
+                                    <div class="quantity-wrapper flex-h center">
+                                        <p>Quantity</p>
+                                        <button id="minus" class="quantity-button minus">-</button>
+                                        <p id="quantity-value">1</p>
+                                        <button  id="plus" class="quantity-button plus">+</button>
+                                    </div>                                  
+                                    <button id="add" class="border-button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main flex-v center" id="shop-page">
+                <div class="products-grid" id="grid1">
+                </div>
+            </div>
+
+            <div class="main flex-v" id="cart-page">
+                <div id="wrapper">
+                    <div id="container">
+                        <div id="items"></div>
+                    </div>
+                     <div id="container">
+                         <div id="cart"></div>
+                     </div>
+                 </div>
+                 <script src="./js-files/cart.js" type="module" ></script>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-container flex-h center">
+                    <div class="footer-div">Store name</div>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>
